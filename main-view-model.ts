@@ -40,7 +40,11 @@ function enableSocketIoDebugging() {
 }
 
 var config: INetworkConfiguration = require('./config');
-config.options = config.options || {}
+config.options = config.options || {};
+
+if(config.ips instanceof Array) {
+	config.ips.push('10.0.2.2');
+}
 
 export class TestBrokerViewModel extends observable.Observable {
     private startEmitted: boolean;

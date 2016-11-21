@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 
 			travis_publish: {
 				command: [
-				'git tag -a <%= versionTag %> -m "nativescript-unit-test-runner v<%= versionTag %>" remotes/origin/master',
+				'git tag -a <%= versionTag %> -m "nativescript-unit-test-runner-essent v<%= versionTag %>" remotes/origin/master',
 				'git push origin <%= versionTag %>'
 				].join('&&')
 			}
