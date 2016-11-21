@@ -197,7 +197,7 @@ export class TestBrokerViewModel extends observable.Observable {
     public beginLocalRun() {
         this.config = this.config || { args: [] };
 
-        frameModule.topmost().navigate('tns_modules/nativescript-unit-test-runner/test-run-page');
+        frameModule.topmost().navigate('tns_modules/nativescript-unit-test-runner-essent/test-run-page');
     }
 
     public onKarmaExecute(cfg) {

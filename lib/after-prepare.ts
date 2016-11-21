@@ -9,7 +9,7 @@ module.exports = function ($platformsData, $testExecutionService) {
 			packageJson = JSON.parse(fs.readFileSync(packageJsonPath).toString());
 
 		// When test command is used in ns-cli, we should change the entry point of the application
-		packageJson.main = "./tns_modules/nativescript-unit-test-runner/app.js";
+		packageJson.main = "./tns_modules/nativescript-unit-test-runner-essent/app.js";
 		fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson));
 	}
 }

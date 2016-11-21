@@ -9,7 +9,7 @@ let projectDir = hookHelper.findProjectDir();
 if(projectDir) {
 	let hooksDir = hookHelper.getHooksDir(),
 		afterPrepareHookDir = hookHelper.getAfterPrepareHookDir(),
-		content = 'module.exports = require("nativescript-unit-test-runner/lib/after-prepare");';
+		content = 'module.exports = require("nativescript-unit-test-runner-essent/lib/after-prepare");';
 	if(!fs.existsSync(hooksDir)) {
 		fs.mkdirSync(hooksDir);
 	}
